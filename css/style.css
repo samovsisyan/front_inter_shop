@@ -1,0 +1,148 @@
+#grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+		"header"
+		"article"
+		"aside"
+		"footer";
+}
+
+header {
+    grid-area: header;
+}
+
+article {
+    grid-area: article;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media (min-width: 640px) {
+    #grid {
+        grid-template-columns: 2fr 4fr;
+        grid-template-areas:
+			"header header"
+			"aside aside"
+            "article article"
+			"footer footer"
+    }
+}
+
+#grid > * {
+    background-color: #28314E;
+    border: 1px solid #212941;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: roboto;
+}
+
+#grid > *:nth-child(odd) {
+    background-color: #475477;
+}
+
+
+/* Style Header  Start*/
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+}
+
+
+/*Header Dropdown Style Satrt*/
+.dropdown {
+    display: grid;
+    grid-template-columns: 100px 150px 1fr;
+    grid-column-gap: 10px;
+}
+
+
+.language {
+    background-color: #0563af;
+    color: white;
+    padding: 2px;
+    width: 100px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    outline: none;
+}
+
+.valuta {
+    background-color: #0563af;
+    color: white;
+    padding: 2px;
+    width: 100px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    outline: none;
+}
+
+
+.login_register {
+    border: 1px solid #212941;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: roboto;
+}
+/*Header Dropdown Style End*/
+
+/*Header Login Register Style Start*/
+
+.login_register{
+    display: grid;
+    grid-template-columns: 150px  10px 200px ;
+    grid-column-gap: 20px;
+    justify-self: end;
+}
+
+
+
+
+
+
+/*Header Media Start*/
+@media (max-width: 800px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .dropdown {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        justify-items: center;
+    }
+
+    .login_register{
+        display: grid;
+        grid-template-columns: 150px  10px 200px ;
+        grid-column-gap: 20px;
+        justify-self: center;
+    }
+
+}
+/*Header Media End*/
+
+
+
+/* Style Header  End*/
+
+
+
+
