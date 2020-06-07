@@ -98,7 +98,7 @@ footer {
 
 .login_register {
     border-radius: 5px;
-    padding: 8px 15px;
+    /*padding: 8px 15px;*/
     color: #ffffff;
     font-size: 18px;
     font-family: roboto;
@@ -179,7 +179,7 @@ footer {
 
 
 
-/*Header Media Start*/
+
 @media (max-width: 1260px) {
     #container {
         display: grid;
@@ -235,18 +235,146 @@ footer {
     /*}*/
 }
 
-@media (max-width: 750px) {
-    .search{
+@media (max-width: 730px) {
+    #container {
         display: grid;
         grid-template-columns: 1fr;
+        justify-self: center;
     }
 
-    .search-input{
+    .dropdown {
         display: grid;
-        grid-template-columns: minmax(10px, 450px) 1fr;
+        grid-template-columns: 0.7fr;
+        grid-column-gap: 10px;
+        justify-items: center;
+    }
+
+    .login_register{
+        display: grid;
+        grid-template-columns: 92px 0px 350px ;
+        grid-column-gap: 15px;
+    }
+
+    .center-line{
+        display: grid;
+        grid-template-columns: 60px;
+        grid-column-gap: 130px;
+        grid-template-areas:
+        "logo minicart"
+        "search  search"
+    }
+
+    .search{
+        display: grid;
+        grid-template-columns: minmax(50px, 520px);
     }
 }
 
+
+@media (max-width: 550px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    /*.dropdown {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: 440px 190px;*/
+    /*    justify-items: center;*/
+    /*}*/
+
+    .dropdown div:nth-child(3){
+        color: #ffffff;
+        font-size: 12px;
+        font-family: roboto;
+    }
+
+    .login_register{
+        display: grid;
+        grid-template-columns: 440px 190px;
+        justify-items: center;
+    }
+
+    .login_register div {
+        color: #ffffff;
+        font-size: 12px;
+        font-family: roboto;
+    }
+
+
+    .search{
+        display: grid;
+        grid-template-columns: minmax(50px, 375px);
+    }
+}
+
+
+@media (max-width: 410px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    .dropdown {
+        display: grid;
+        justify-self: start;
+    }
+
+    .dropdown div:nth-child(3){
+        color: #ffffff;
+        font-size: 8px;
+        font-family: roboto;
+    }
+
+    .login_register{
+        display: grid;
+        justify-items: start;
+    }
+
+    .login_register div {
+        color: #ffffff;
+        font-size: 8px;
+        font-family: roboto;
+    }
+    .center-line {
+        display: grid;
+        grid-template-areas:
+        "logo"
+        "minicart"
+        "search"
+    }
+    .logo {
+        grid-area: logo
+    }
+
+    .search {
+        grid-area: search
+    }
+
+    .minicart {
+        grid-area: minicart
+    }
+    .minicart img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .minicart * {
+        font-size: 8px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .search{
+        display: grid;
+        grid-template-columns: 120px;
+    }
+}
 
 /*Header Media End*/
 
