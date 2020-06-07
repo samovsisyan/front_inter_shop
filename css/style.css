@@ -26,7 +26,7 @@ footer {
 
 #header{
     display: grid;
-    grid-row-gap: 40px;
+    grid-row-gap: 20px;
 }
 
 @media (min-width: 640px) {
@@ -34,8 +34,8 @@ footer {
         grid-template-columns: 2fr 4fr;
         grid-template-areas:
 			"header header"
-			"aside aside"
-            "article article"
+			"aside article"
+            "aside article"
 			"footer footer"
     }
 }
@@ -178,52 +178,49 @@ footer {
 /*Header center-line Style End*/
 
 
-
 /*Header navigation Style Start*/
-
-.navigation ul{
+.navigation_dropdown div:nth-child(2){
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    justify-items: center;
     list-style-type: none;
 }
-
-.navigation ul li:active{
+.navigation_dropdown div:nth-child(2) a:active{
     color: black;
+}
+
+.navigation_dropbtn {
+    display: none;
 }
 
 /*Header navigation Style End*/
 
+/* Style Header  End*/
 
 
 
 
 
-
-
+/* MEDIA START*/
 
 @media (max-width: 1260px) {
+    /*Header Media Start*/
     #container {
         display: grid;
         grid-template-columns: 1fr;
     }
-
     .dropdown {
         display: grid;
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
         justify-items: center;
     }
-
     .login_register{
         display: grid;
         grid-template-columns: 150px  10px 200px ;
         grid-column-gap: 20px;
         justify-self: center;
     }
-
-
-
-
     .center-line{
         display: grid;
         grid-template-columns: 1fr;
@@ -232,50 +229,36 @@ footer {
         "logo minicart"
         "search  search"
     }
-
     .logo{
         grid-area: logo
     }
-
     .search{
         grid-area: search;
     }
-
     .minicart{
         grid-area: minicart;
     }
-
-    /*.search{*/
-    /*    display: grid;*/
-    /*    grid-template-columns: minmax(0.3fr, 3fr) 1fr;*/
-    /*}*/
-
-    /*.search-input{*/
-    /*    display: grid;*/
-    /*    grid-template-columns: minmax(10px, 450px) 1fr;*/
-    /*}*/
+    /*Header Media End*/
 }
 
 @media (max-width: 730px) {
+    /*Header Media Start*/
     #container {
         display: grid;
         grid-template-columns: 1fr;
         justify-self: center;
     }
-
     .dropdown {
         display: grid;
         grid-template-columns: 0.7fr;
         grid-column-gap: 10px;
         justify-items: center;
     }
-
     .login_register{
         display: grid;
         grid-template-columns: 92px 0px 350px ;
         grid-column-gap: 15px;
     }
-
     .center-line{
         display: grid;
         grid-template-columns: 60px;
@@ -284,85 +267,101 @@ footer {
         "logo minicart"
         "search  search"
     }
-
     .search{
         display: grid;
         grid-template-columns: minmax(50px, 520px);
     }
-
-
+    /*Header Media End*/
 }
 
 
+
 @media (max-width: 550px) {
+    /*Header Media Start*/
     #container {
         display: grid;
         grid-template-columns: 1fr;
         justify-self: center;
     }
-
-    /*.dropdown {*/
-    /*    display: grid;*/
-    /*    grid-template-columns: 440px 190px;*/
-    /*    justify-items: center;*/
-    /*}*/
-
     .dropdown div:nth-child(3){
         color: #ffffff;
         font-size: 12px;
         font-family: roboto;
     }
-
     .login_register{
         display: grid;
         grid-template-columns: 440px 190px;
         justify-items: center;
     }
-
     .login_register div {
         color: #ffffff;
         font-size: 12px;
         font-family: roboto;
     }
-
-
     .search{
         display: grid;
         grid-template-columns: minmax(50px, 375px);
     }
-
-    .navigation ul{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-        grid-row-gap: 5px;
-        list-style-type: none;
+    .navigation_dropdown div:nth-child(2){
+        display: none;
     }
+    .navigation_dropbtn {
+        position: relative;
+        display: inline-block;
+    }
+    .navigation_dropbtn {
+        display: grid;
+        grid-template-columns: 375px;
+        justify-content: stretch;
+    }
+    .navigation_dropdown_content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .navigation_dropdown:hover .navigation_dropdown_content {
+        display: block;
+    }
+    .navigation_dropdown_content a {
+        display: grid;
+        grid-template-columns: 375px;
+        justify-content: stretch;
+        justify-items: center;
+        color: black;
+        padding: 8px 0px;
+        text-decoration: none;
+        /*display: block;*/
+    }
+
+
+    /*Header Media End*/
 }
 
 
+
 @media (max-width: 410px) {
+    /*Header Media Start*/
     #container {
         display: grid;
         grid-template-columns: 1fr;
         justify-self: center;
     }
-
     .dropdown {
         display: grid;
         justify-self: start;
     }
-
     .dropdown div:nth-child(3){
         color: #ffffff;
         font-size: 8px;
         font-family: roboto;
     }
-
     .login_register{
         display: grid;
         justify-items: start;
     }
-
     .login_register div {
         color: #ffffff;
         font-size: 8px;
@@ -378,11 +377,9 @@ footer {
     .logo {
         grid-area: logo
     }
-
     .search {
         grid-area: search
     }
-
     .minicart {
         grid-area: minicart
     }
@@ -390,34 +387,75 @@ footer {
         width: 50px;
         height: 30px;
     }
-
     .minicart * {
         font-size: 8px;
     }
-
     .logo img {
         width: 100px;
         height: 50px;
     }
-
     .search{
         display: grid;
         grid-template-columns: 120px;
     }
-
     .navigation ul{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(500px, auto));
         grid-row-gap: 2px;
         list-style-type: none;
     }
+
+
+
+
+    .navigation_dropdown div:nth-child(2){
+        display: none;
+    }
+
+    .navigation_dropbtn {
+        position: relative;
+        display: inline-block;
+    }
+
+    .navigation_dropbtn {
+        display: grid;
+        grid-template-columns: 120px;
+        justify-content: stretch;
+    }
+
+    .navigation_dropdown_content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+
+
+    .navigation_dropdown_content a {
+
+        display: grid;
+        grid-template-columns: 110px;
+        justify-content: stretch;
+        justify-items: center;
+        color: black;
+        padding: 8px 0px;
+        text-decoration: none;
+        /*display: block;*/
+
+    }
+
+    /*Header Media End*/
 }
 
-/*Header Media End*/
+/* MEDIA END*/
 
 
 
-/* Style Header  End*/
+
+
 
 
 
