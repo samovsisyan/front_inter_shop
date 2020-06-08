@@ -26,12 +26,12 @@ footer {
 
 #header {
     display: grid;
-    grid-row-gap: 20px;
+    grid-row-gap: 5px;
 }
 
 @media (min-width: 1100px) {
     #grid {
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 1.5fr 4.5fr;
         grid-template-areas:
 			"header header"
 			"aside article"
@@ -308,6 +308,44 @@ footer {
 
 
 /* Style aside  End*/
+
+
+/* Style Article Start*/
+
+/*Start Article Products Style Start*/
+
+.article_products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, auto));
+    grid-gap: 5px;
+    grid-auto-rows: minmax(290px, auto);
+    justify-content: center;
+}
+
+.article_products div {
+    background-color: #28314E;
+    border: 1px solid #212941;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: roboto;
+}
+
+.img_product img {
+    width: 250px;
+    height: 250px;
+}
+
+.article_products_item div{
+    font-size: 12px;
+}
+
+/*Start Article Products Style End*/
+
+/* Style Article End*/
+
+
 
 /* MEDIA START*/
 
@@ -802,7 +840,6 @@ footer {
         text-decoration: none;
     }
     /*@media style Size Sort End*/
-
 
     /*Aside Media End*/
 }
