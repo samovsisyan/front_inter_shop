@@ -10,25 +10,25 @@
     <header id="header">
         <!--Html container Start-->
         <div id="container">
-                <div class="dropdown">
-                    <div>
-                        <select class="valuta">
-                            <option value="volvo">Рубли ₽</option>
-                            <option value="saab">EUR €</option>
-                            <option value="opel">USD $</option>
-                        </select>
-                    </div>
-                    <div>
-                        <select class="language">
-                            <option value="volvo">Русский</option>
-                            <option value="saab">English(US)</option>
-                            <option value="opel">Armean(AM)</option>
-                        </select>
-                    </div>
-                    <div>
-                        <span>Добро пожаловать на Inter Shop!</span>
-                    </div>
+            <div class="dropdown">
+                <div>
+                    <select class="valuta">
+                        <option value="volvo">Рубли ₽</option>
+                        <option value="saab">EUR €</option>
+                        <option value="opel">USD $</option>
+                    </select>
                 </div>
+                <div>
+                    <select class="language">
+                        <option value="volvo">Русский</option>
+                        <option value="saab">English(US)</option>
+                        <option value="opel">Armean(AM)</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Добро пожаловать на Inter Shop!</span>
+                </div>
+            </div>
 
             <div class="login_register">
                 <div>
@@ -51,8 +51,8 @@
             </div>
 
             <div class="search">
-                    <input class="search-input" type="search" name="searchList" placeholder="Поиск" required="">
-                    <button type="submit" class="btn search-button">Найти</button>
+                <input class="search-input" type="search" name="searchList" placeholder="Поиск" required="">
+                <button type="submit" class="btn search-button">Найти</button>
             </div>
 
             <div class="minicart">
@@ -64,31 +64,56 @@
         <!--Html center-line End-->
 
         <!--Html navigation Start-->
-            <div class="navigation_dropdown">
-                <div class="navigation_dropbtn">
-                    <button>Manu</button>
-                </div>
-                <div class="navigation_dropdown_content">
-                    <a>item 1</a>
-                    <a>item 2</a>
-                    <a>item 3</a>
-                    <a>item 4</a>
-                    <a>item 5</a>
-                    <a>item 6</a>
-                    <a>item 7</a>
-                </div>
+        <div class="navigation_dropdown">
+            <div class="navigation_dropbtn">
+                <button type="button">Manu</button>
             </div>
+            <div class="navigation_dropdown_content">
+                <a>item 1</a>
+                <a>item 2</a>
+                <a>item 3</a>
+                <a>item 4</a>
+                <a>item 5</a>
+                <a>item 6</a>
+                <a>item 7</a>
+            </div>
+        </div>
         <!--Html navigation End-->
     </header>
     <article>
         <h1>Заголовок</h1>
         <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты.</p>
     </article>
+
+
     <aside class="aside-bar">
-        <div class="aside_bar_category">Категория</div>
-        <div class="aside_bar_brand">Бренд</div>
-        <div class="aside_bar_price">Цена</div>
-        <div class="aside_bar_color">Цвет</div>
+
+        <div class="bar_category">
+            <div class="filter-options-title_category">
+                <a href="#" class="collapsed">Категория<img src="img/aside/down-arrow.png" alt="Категория"></a>
+            </div>
+            <div class="bar_category_sort">
+                <label class="inline"><input type="checkbox"> <span class="input"></span>Обувь</label>
+                <label class="inline"><input type="checkbox"> <span class="input"></span>Обувь</label>
+                <label class="inline"><input type="checkbox"> <span class="input"></span>Обувь</label>
+                <label class="inline"><input type="checkbox"> <span class="input"></span>Обувь</label>
+                <label class="inline"><input type="checkbox"> <span class="input"></span>Обувь</label>
+            </div>
+        </div>
+
+
+        <div class="aside_bar_price_sort">
+            <div class="filter-options-title_category">
+                <a href="#" class="collapsed">Цена<img src="img/aside/down-arrow.png" alt="Цена"></a>
+            </div>
+            <div class="aside_bar_price_display">
+                <div class="aside_bar_price display">
+                    <div class="slider_price">HEllo World</div>
+                    <div class="from_price">fdsfsd</div>
+                    <div class="to_price"> 0542145141</div>
+                </div>
+            </div>
+        </div>
     </aside>
     <footer>Подвал</footer>
 </div>
@@ -96,9 +121,31 @@
 </html>
 
 
-
-
-
+<!--<div class="category_list">-->
+<!--    <ul>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Обувь</label></li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Футболки и топы</label>-->
+<!--        </li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Худи и толстовки</label>-->
+<!--        </li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Куртки и жилеты</label>-->
+<!--        </li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Брюки и тайтсы</label>-->
+<!--        </li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Шорты</label></li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Аксессуары и снаряжение</label>-->
+<!--        </li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Куртки и жилеты</label>-->
+<!--        </li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Брюки и тайтсы</label>-->
+<!--        </li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Шорты</label></li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Аксессуары и снаряжение</label>-->
+<!--        </li>-->
+<!--        <li><label class="inline"><input type="checkbox"><span class="input"></span>Худи и толстовки</label>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</div>-->
 
 
 
