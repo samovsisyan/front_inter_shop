@@ -360,30 +360,40 @@ footer {
 @media (max-width: 1100px) {
     /*Aside Media Start*/
 
-    /*@Media Style Category Sort Start*/
-    .filter-options-title_category a {
-        position: relative;
-        display: block;
-        height: 38px;
-        line-height: 38px;
-        color: #333;
-        text-decoration: none;
-        margin-left: 450px;
-    }
+    /*!*@Media Style Category Sort Start*!*/
+    /*.filter-options-title_category a {*/
+    /*    position: relative;*/
+    /*    display: block;*/
+    /*    height: 38px;*/
+    /*    line-height: 38px;*/
+    /*    color: #333;*/
+    /*    text-decoration: none;*/
+    /*    margin-left: 450px;*/
+    /*}*/
 
-    .filter-options-title_category {
-        display: grid;
-        grid-template-columns: 5fr 4fr;
-        align-self: center;
-    }
+    /*.filter-options-title_category {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: 5fr 4fr;*/
+    /*    align-self: center;*/
+    /*}*/
 
-    /*@Media Style Category Sort End*/
+    /*!*@Media Style Category Sort End*!*/
 
     /*Aside Media End*/
 }
 
 
 @media (max-width: 730px) {
+    #grid {
+        grid-template-columns: 2fr 4fr;
+        grid-template-areas:
+			"header header"
+			"article article"
+            "aside aside"
+			"footer footer"
+    }
+
+
     /*Header Media Start*/
     #container {
         display: grid;
@@ -609,17 +619,192 @@ footer {
         padding: 8px 0px;
         text-decoration: none;
         /*display: block;*/
-
     }
 
     /*Header Media End*/
 
     /*Aside Media Start*/
 
+    .aside_bar_price {
+        display: grid;
+        grid-template-areas:
+    "slider_price slider_price"
+    "from_price from_price"
+    "to_price to_price"
+    }
 
+    .slider_price {
+        grid-area: slider_price;
+    }
+
+    .from_price {
+        grid-area: from_price;
+    }
+
+    .to_price {
+        grid-area: to_price;
+    }
+
+
+    .aside_bar_size {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-gap: 5px;
+    }
 
     /*Aside Media End*/
 
+}
+
+
+@media (max-width: 300px) {
+    /*Aside Media Start*/
+    .bar_category_sort {
+        display: none;
+    }
+
+    .aside_bar_price_display {
+        display: none;
+    }
+
+    .aside_bar_size_display{
+        display: none;
+    }
+
+
+
+    /*@media style Catergoty Sort Start*/
+
+    .bar_category div:nth-child(2) {
+        display: none;
+    }
+
+    .filter-options-title_category {
+        position: relative;
+        display: inline-block;
+    }
+
+    .filter-options-title_category {
+        display: grid;
+        grid-template-columns: 375px;
+        justify-content: stretch;
+    }
+
+    .bar_category_sort {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .bar_category:hover .bar_category_sort {
+        display: block;
+    }
+
+    .bar_category_sort label {
+        display: grid;
+        grid-template-columns: 30px;
+        justify-content: start;
+        justify-items: start;
+        color: black;
+        padding: 5px 13px;
+        text-decoration: none;
+    }
+    /*@media style Catergoty Sort End*/
+
+
+
+    /*@media style Price Sort Start*/
+
+    .aside_bar_price_sort div:nth-child(2) {
+        display: none;
+    }
+
+    .filter-options-title_category {
+        position: relative;
+        display: inline-block;
+    }
+
+    .filter-options-title_category {
+        display: grid;
+        grid-template-columns: 375px;
+        justify-content: stretch;
+    }
+
+    .aside_bar_price {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .aside_bar_price_sort:hover .aside_bar_price {
+        display: block;
+    }
+
+    .aside_bar_price label {
+        display: grid;
+        grid-template-columns: 30px;
+        justify-content: start;
+        justify-items: start;
+        color: black;
+        padding: 5px 13px;
+        text-decoration: none;
+    }
+    /*@media style Price Sort End*/
+
+
+
+
+
+
+    /*@media style Size Sort Start*/
+
+    .aside_bar_size_sort div:nth-child(2) {
+        display: none;
+    }
+
+    .filter-options-title_category {
+        position: relative;
+        display: inline-block;
+    }
+
+    .filter-options-title_category {
+        display: grid;
+        grid-template-columns: 375px;
+        justify-content: stretch;
+    }
+
+    .aside_bar_size {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .aside_bar_size_sort:hover .aside_bar_size {
+        display: block;
+    }
+
+    .aside_bar_size label {
+        display: grid;
+        grid-template-columns: 30px;
+        justify-content: start;
+        justify-items: start;
+        color: black;
+        padding: 5px 13px;
+        text-decoration: none;
+    }
+    /*@media style Size Sort End*/
+
+
+    /*Aside Media End*/
 }
 
 /* MEDIA END*/
