@@ -341,6 +341,17 @@ footer {
     font-size: 12px;
 }
 
+
+.article_products_pages_button_number{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-gap: 3px;
+}
+
+.article_products_pages_button_number_media {
+    display: none;
+}
+
 /*Start Article Products Style End*/
 
 /* Style Article End*/
@@ -392,6 +403,52 @@ footer {
     }
 
     /*Header Media End*/
+
+
+
+
+
+}
+
+
+@media (max-width: 1200px) {
+    /*Start Media Article Products Style Start*/
+
+    .article_products {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, auto));
+        grid-gap: 5px;
+        grid-auto-rows: minmax(290px, auto);
+        justify-content: center;
+    }
+
+    .article_products div {
+        background-color: #28314E;
+        border: 1px solid #212941;
+        border-radius: 5px;
+        padding: 8px 15px;
+        color: #ffffff;
+        font-size: 18px;
+        font-family: roboto;
+    }
+
+    .img_product img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .article_products_item div{
+        font-size: 12px;
+    }
+
+
+    .article_products_pages_button_number{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+        grid-gap: 3px;
+    }
+
+    /*Start @Media Article Products Style End*/
 }
 
 
@@ -469,6 +526,34 @@ footer {
     /*Header Media End*/
 }
 
+
+@media (max-width: 624px) {
+    /*Start Media Article Products Style Start*/
+
+    .article_products {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(150px, auto));
+        grid-gap: 5px;
+        grid-auto-rows: minmax(290px, auto);
+        justify-content: center;
+    }
+
+    .article_products_pages_button_number{
+        display: none;
+    }
+
+    .article_products_pages_button_number_media {
+        display: block;
+    }
+
+    .article_products_pages_button_number_media {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-gap: 10px;
+    }
+
+    /*Start Media Article Products Style End*/
+}
 
 @media (max-width: 550px) {
     /*Header Media Start*/
