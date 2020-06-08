@@ -251,7 +251,43 @@ footer {
 /*Aside Category Sort End*/
 
 
+/*Aside Price Sort Start*/
 
+.aside_bar_price_display {
+    display: block;
+}
+
+.aside_bar_price {
+    display: grid;
+    grid-template-areas:
+    "slider_price slider_price"
+    "from_price to_price"
+}
+
+.slider_price {
+    grid-area: slider_price;
+}
+
+.from_price {
+    grid-area: from_price;
+}
+
+.to_price {
+    grid-area: to_price;
+}
+
+/*Aside Price Sort End*/
+
+
+/*Aside Size Sort Start*/
+
+.aside_bar_size {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 5px;
+}
+
+/*Aside Size Sort End*/
 
 
 
