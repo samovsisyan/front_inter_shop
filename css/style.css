@@ -621,6 +621,16 @@ footer {
     }
 
     /*Header Media End*/
+
+    /*Footer Media Start*/
+
+    .footer_about {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    /*Footer Media End*/
+
 }
 
 
@@ -724,6 +734,16 @@ footer {
 
 
     /*Header Media End*/
+
+    /*Footer Media Start*/
+
+    .pay-men div {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    /*Footer Media End*/
+
 }
 
 
@@ -1024,6 +1044,22 @@ footer {
     /*@media style Size Sort End*/
 
     /*Aside Media End*/
+
+
+    /*Footer Media Start*/
+
+    .pay-men  {
+        display: grid;
+        justify-content: start;
+    }
+
+    .footer_copyright {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: start;
+    }
+
+    /*Footer Media End*/
 }
 
 /* MEDIA END*/
