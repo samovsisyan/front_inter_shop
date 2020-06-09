@@ -356,6 +356,103 @@ footer {
 
 /* Style Article End*/
 
+/* Style Footer Start*/
+
+.footer{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/*Footer About Style Start*/
+
+.footer_about{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+
+.footer_about_us_title {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 15px;
+}
+
+.footer_about_us_title span:nth-child(1)  {
+    font-size: 16px;
+}
+
+.footer_about_us_title span  {
+    font-size: 12px;
+}
+
+.footer_about_us_title span img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer_halp {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.footer_halp span:nth-child(1)  {
+    font-size: 16px;
+}
+
+.footer_halp span  {
+    font-size: 12px;
+}
+
+
+.footer_information {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.footer_information span:nth-child(1)  {
+    font-size: 16px;
+}
+
+.footer_information span  {
+    font-size: 12px;
+}
+
+/*Footer About Style End*/
+
+
+/*Footer Pay Men Start*/
+
+.pay-men {
+    display: grid;
+    justify-content: center;
+}
+
+.pay-men div img {
+    width: 90px;
+    height: 59px;
+
+}
+
+/*Footer Pay Men End*/
+
+
+
+
+/*Footer Copyright Start*/
+
+
+.footer_copyright {
+    display: grid;
+    grid-template-columns: 134px 80px 166px;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+/*Footer Copyright End*/
+/* Style Footer End*/
+
 
 
 /* MEDIA START*/
