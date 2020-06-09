@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div id="grid">
+
+<header id="header">
+    <!--Html container Start-->
+    <div id="container">
+        <div class="dropdown">
+            <div>
+                <select class="valuta">
+                    <option value="volvo">Рубли ₽</option>
+                    <option value="saab">EUR €</option>
+                    <option value="opel">USD $</option>
+                </select>
+            </div>
+            <div>
+                <select class="language">
+                    <option value="volvo">Русский</option>
+                    <option value="saab">English(US)</option>
+                    <option value="opel">Armean(AM)</option>
+                </select>
+            </div>
+            <div>
+                <span>Добро пожаловать на Inter Shop!</span>
+            </div>
+        </div>
+
+        <div class="login_register">
+            <div>
+                <span>Оплата и доставка</span>
+            </div>
+            <div>
+                <span>|</span>
+            </div>
+            <div>
+                <span>Регистрация / Вход</span>
+            </div>
+        </div>
+    </div>
+    <!--Html container End-->
+
+    <!--Html center-line Start-->
+    <div class="center-line">
+        <div class="logo">
+            <img src="img/header/sample-logo.png" alt="sample-logo">
+        </div>
+
+        <div class="search">
+            <input class="search-input" type="search" name="searchList" placeholder="Поиск" required="">
+            <button type="submit" class="btn search-button">Найти</button>
+        </div>
+
+        <div class="minicart">
+            <img src="img/header/cart.png" alt="cart">
+            <span>Товаров на:</span>
+            <p>24 000.00 руб.</p>
+        </div>
+    </div>
+    <!--Html center-line End-->
+
+    <!--Html navigation Start-->
+    <div class="navigation_dropdown">
+        <div class="navigation_dropbtn">
+            <button type="button">Manu</button>
+        </div>
+        <div class="navigation_dropdown_content">
+            <a>item 1</a>
+            <a>item 2</a>
+            <a>item 3</a>
+            <a>item 4</a>
+            <a>item 5</a>
+            <a>item 6</a>
+            <a>item 7</a>
+        </div>
+    </div>
+    <!--Html navigation End-->
+</header>
+
+
+
+<form class="form-cart">
+
+    <div class="table-cart">
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th class="table-image">Изображение</th>
+                <th class="table-product">Наименование</th>
+                <th class="table-price">Cтоимость</th>
+                <th class="table-qty">Количество</th>
+                <th class="table-total">Стоимость (руб.)</th>
+                <th class="table-total">Заказ</th>
+                <th class="table-remove">Очистить</th>
+            </tr>
+            </thead>
+
+            <tbody class="tbody">
+            <tr>
+                <td>
+                    <a href="#">
+                        <img src="img/article/258b7345758439.5845735e75a222.jpg" height="150" width="150"/></a>
+                </td>
+                <td>
+                    <div class="product-name">
+                        <a href="">Smartphone MTK6737 Quad Core.</a>
+                    </div>
+                    <ul class="feature">
+                        <li>
+                            <span>Цвет:</span>
+                            <span class="product-color" style="background-color: #D1C8C1"></span>
+                        </li>
+                        <li>
+                            <span>Размер:</span>
+                            <span class="product-size">41</span>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <span class="price">12 000.00</span>
+                </td>
+                <td>
+                    <div class="quantity">
+                        <div class="buttons-added">
+                            <!--                            <a href="#" class="sign minus"><i class="fa fa-minus"></i></a>-->
+                            <img src="img/cart/button_minus_1-512.webp" alt="button_minus">
+                            <input type="text" value="1" title="Qty" class="input-text qty text" size="1">
+                            <!--                            <a href="#" class="sign plus"><i class="fa fa-plus"></i></a>-->
+                            <img src="img/cart/plus-calculator-symbol-add-512.webp" alt="plus-calculator">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span class="price">12 000.00</span>
+                </td>
+                <td>
+                    <a href="" class="action-remove" title="Удалить">
+                        <span>
+                            <img src="img/cart/cross.png" alt="alt">
+                        </span>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="action-order" title="Заказ">
+                        <span>
+                            <img src="img/cart/ДОСТАВКА.png" alt="alt">
+                        </span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">
+                        <img src="img/article/258b7345758439.5845735e75a222.jpg" height="150" width="150"/></a>
+                </td>
+                <td>
+                    <div class="product-name">
+                        <a href="">Smartphone MTK6737 Quad Core.</a>
+                    </div>
+                    <ul class="feature">
+                        <li>
+                            <span>Цвет:</span>
+                            <span class="product-color" style="background-color: #D1C8C1"></span>
+                        </li>
+                        <li>
+                            <span>Размер:</span>
+                            <span class="product-size">41</span>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <span class="price">12 000.00</span>
+                </td>
+                <td>
+                    <div class="quantity">
+                        <div class="buttons-added">
+                            <!--                            <a href="#" class="sign minus"><i class="fa fa-minus"></i></a>-->
+                            <img src="img/cart/button_minus_1-512.webp" alt="button_minus">
+                            <input type="text" value="1" title="Qty" class="input-text qty text" size="1">
+                            <!--                            <a href="#" class="sign plus"><i class="fa fa-plus"></i></a>-->
+                            <img src="img/cart/plus-calculator-symbol-add-512.webp" alt="plus-calculator">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span class="price">12 000.00</span>
+                </td>
+                <td>
+                    <a href="" class="action-remove" title="Удалить">
+                        <span>
+                            <img src="img/cart/cross.png" alt="alt">
+                        </span>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="action-order" title="Заказ">
+                        <span>
+                            <img src="img/cart/ДОСТАВКА.png" alt="alt">
+                        </span>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="cart-actions">
+        <button type="submit" class="btn-continue">
+            <span>
+                Вернуться в магазин
+            </span>
+        </button>
+        <button type="submit" class="btn-clean">
+            <span>Очистить корзину</span>
+        </button>
+    </div>
+</form>
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="footer_about">
+            <div></div>
+            <div class="footer_about_us_title">
+                <span>About us</span>
+                <span>
+                        Далеко-далеко за словесными горами в стране,
+                        гласных и согласных живут рыбные тексты.
+                        Моей но, взгляд точках, семь заманивший своих,
+                        языком несколько образ.
+                    </span>
+                <span>
+                        <img src="img/footer/32-location_-_pin_map-512.webp" alt="location"/>
+                        г. Москва, Волжский бульвар, дом 38
+                    </span>
+                <span>
+                        <img src="img/footer/phone-512.webp" alt="phone"/>
+                        +7 961 457 20 82
+                    </span>
+                <span>
+                    <img src="img/footer/120-512.webp" alt="mail"/>
+                        yourwebpixel@gmail.com
+                    </span>
+            </div>
+            <div class="footer_halp">
+                <span>Помощь</span>
+                <span>Моя корзина</span>
+                <span>Оплата и доставка</span>
+                <span>Оформление заказа</span>
+                <span>Отслеживание заказа</span>
+                <span>Обмен и возврат</span>
+            </div>
+            <div class="footer_information">
+                <span>Информация</span>
+                <span>О компании</span>
+                <span>Вакансии</span>
+                <span>Новости</span>
+                <span>Сотрудничество</span>
+                <span>Контакты</span>
+                <span>Карта сайта</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pay-men">
+        <div>
+            <img src="img/footer/31-512.png" height="50" width="50"/>
+            <img src="img/footer/qiwi-512.png" height="50" width="50"/>
+            <img src="img/footer/yandex-512.png" height="50" width="50"/>
+            <img src="img/footer/filled_outline-43-512.png" height="50" width="50"/>
+            <img src="img/footer/pay_pal_paypal_payments-512.png" height="50" width="50"/>
+        </div>
+    </div>
+    <div class="footer_copyright">
+        © Copyright 2017<span> <strong>Yourlogo</strong></span>. Все права защищены.
+    </div>
+</footer>
+</div>
+</body>
+</html>
