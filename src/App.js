@@ -15,6 +15,7 @@ import Product from "./pages/Product";
 import Registr from "./pages/Registr";
 import Shares from "./pages/Shares";
 import Wishlist from "./pages/Wishlist";
+import Zakaz_1 from "./pages/Zakaz-1";
 
 class App extends Component {
     render() {
@@ -35,6 +36,8 @@ class App extends Component {
                     <Route path="/registr" component={Registr}/>
                     <Route path="/shares" component={Shares}/>
                     <Route path="/wishlist" component={Wishlist}/>
+                    <Route path="/zakaz-1" component={Zakaz_1}/>
+
 
 
                 </Switch>
