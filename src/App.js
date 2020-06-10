@@ -13,6 +13,8 @@ import News from "./pages/News";
 import NewsSing from "./pages/NewsSing";
 import Product from "./pages/Product";
 import Registr from "./pages/Registr";
+import Shares from "./pages/Shares";
+import Wishlist from "./pages/Wishlist";
 
 class App extends Component {
     render() {
@@ -31,6 +33,8 @@ class App extends Component {
                     <Route path="/news-sing" component={NewsSing}/>
                     <Route path="/product" component={Product}/>
                     <Route path="/registr" component={Registr}/>
+                    <Route path="/shares" component={Shares}/>
+                    <Route path="/wishlist" component={Wishlist}/>
 
 
                 </Switch>
