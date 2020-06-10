@@ -1,13 +1,31 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 
-
-
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            openMenu: false,
+            openLeng: true,
+            openCurrency: true,
 
+        }
+    }
 
+    toggleMenu = () => {
+        this.setState({openMenu: !this.state.openMenu})
+    }
+
+    toggleLeng = () => {
+        this.setState({openLeng: !this.state.openLeng})
+    }
+
+    toggleCurrency = () => {
+        this.setState({openCurrency: !this.state.openCurrency})
+    }
 
     render() {
+        console.log(this.state);
         return (
             <header class="home-page">
                 <div id="my-page">
@@ -25,8 +43,9 @@ class Header extends Component {
 
                                     <ul className="nav-top-left">
                                         <li>
-                                            <div>
-                                                <span className="expand-more dropdown-button-tl" data-toggle="dropdown">Рубли ₽</span>
+                                            <div onClick={this.toggleCurrency} className={`${this.state.openCurrency ? "currency-selector dropdown" : "currency-selector dropdown open"}`}>
+                                                <span className="expand-more dropdown-button-tl" data-toggle="dropdown"
+                                                      aria-expanded={`${this.state.openCurrency ? "false" : "true"}`}>Рубли ₽</span>
                                                 <ul className="dropdown-menu">
                                                     <li className="current">
                                                         <Link title="Рубли" rel="nofollow" to=""
@@ -44,9 +63,9 @@ class Header extends Component {
                                             </div>
                                         </li>
                                         <li>
-                                            <div>
+                                            <div onClick={this.toggleLeng} className={`${this.state.openLeng ? "site-lng dropdown" : "site-lng dropdown open"}`}>
                                                 <div className="button-lng-box dropdown-button-tl"
-                                                     data-toggle="dropdown" role="button">Русский
+                                                     data-toggle="dropdown" role="button" aria-expanded={`${this.state.openLeng ? "false" : "true"}`}>Русский
                                                 </div>
                                                 <div className="lng-box-hiiden-wrapp dropdown-menu dropdown-box-s-wrap">
                                                     <div className="lng-box-hiiden dropdown-box-s">
@@ -222,8 +241,9 @@ class Header extends Component {
 
                                 <div className="navigation">
 
-                                    <div>
-                                        <div className="megamnu-button" data-toggle="dropdown"
+                                    <div
+                                        class={`megamnu dropdown ${this.state.openMenu ? 'megamnu dropdown open' : ''}`}>
+                                        <div onClick={this.toggleMenu} className="megamnu-button" data-toggle="dropdown"
                                              role="button">
                                             <h4 className="title">
 									<span className="btn-open-mobile home-page">

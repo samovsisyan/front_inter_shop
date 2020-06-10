@@ -18,6 +18,7 @@ import Wishlist from "./pages/Wishlist";
 import Zakaz_1 from "./pages/Zakaz-1";
 import Zakaz_2 from "./pages/Zakaz-2";
 import Zakaz_3 from "./pages/Zakaz-3";
+import Zakaz_4 from "./pages/Zakaz-4";
 
 class App extends Component {
     render() {
@@ -41,6 +42,7 @@ class App extends Component {
                     <Route path="/zakaz-1" component={Zakaz_1}/>
                     <Route path="/zakaz-2" component={Zakaz_2}/>
                     <Route path="/zakaz-3" component={Zakaz_3}/>
+                    <Route path="/zakaz-4" component={Zakaz_4}/>
 
 
 
