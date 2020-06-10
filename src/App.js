@@ -11,6 +11,8 @@ import Latest from "./pages/Latest";
 import MyCart from "./pages/MyCart";
 import News from "./pages/News";
 import NewsSing from "./pages/NewsSing";
+import Product from "./pages/Product";
+import Registr from "./pages/Registr";
 
 class App extends Component {
     render() {
@@ -27,6 +29,8 @@ class App extends Component {
                     <Route path="/my-cart" component={MyCart}/>
                     <Route path="/news" component={News}/>
                     <Route path="/news-sing" component={NewsSing}/>
+                    <Route path="/product" component={Product}/>
+                    <Route path="/registr" component={Registr}/>
 
 
                 </Switch>
