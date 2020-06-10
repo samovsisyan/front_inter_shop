@@ -10,6 +10,7 @@ import Delivety from "./pages/Delivety";
 import Latest from "./pages/Latest";
 import MyCart from "./pages/MyCart";
 import News from "./pages/News";
+import NewsSing from "./pages/NewsSing";
 
 class App extends Component {
     render() {
@@ -20,11 +21,12 @@ class App extends Component {
                     <Route path="/header" component={Header} />
                     <Route path="/footer" component={Footer} />
                     <Route path="/about-us" component={AboutUs}/>
-                    <Route path="/Category" component={Category}/>
-                    <Route path="/Category" component={Delivety}/>
-                    <Route path="/Category" component={Latest}/>
-                    <Route path="/Category" component={MyCart}/>
-                    <Route path="/Category" component={News}/>
+                    <Route path="/category" component={Category}/>
+                    <Route path="/delivety" component={Delivety}/>
+                    <Route path="/latest" component={Latest}/>
+                    <Route path="/my-cart" component={MyCart}/>
+                    <Route path="/news" component={News}/>
+                    <Route path="/news-sing" component={NewsSing}/>
 
 
                 </Switch>
