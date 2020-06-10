@@ -8,7 +8,6 @@ class Header extends Component {
             openMenu: false,
             openLeng: true,
             openCurrency: true,
-
         }
     }
 
@@ -100,9 +99,9 @@ class Header extends Component {
                                     <ul className="nav-top-right">
                                         <li><Link to="/delivety" className="title-pages">Оплата и доставка</Link></li>
                                         <li>
-                                            <Link to="#sign_in" className="reg-or-sign hidden-xs popup_content"><i
+                                            <Link to="/registr" className="reg-or-sign hidden-xs popup_content"><i
                                                 className="fa fa-user"></i>Регистрация / Вход</Link>
-                                            <Link to="#sign_in" className="ref-or-sign-mobile visible-xs popup_content">
+                                            <Link to="#registr" className="ref-or-sign-mobile visible-xs popup_content">
                                                 <img src="img/header/profile.svg" alt="alt" />
                                             </Link>
                                         </li>
@@ -274,7 +273,7 @@ class Header extends Component {
                                     <div className="nav-site-wrapp">
                                         <nav className="nav-site">
                                             <ul className="nav-site-mnu clearfix">
-                                                <li><Link to="/popular">Популярное</Link></li>
+                                                <li><Link to="/product">Популярное</Link></li>
                                                 <li><Link to="/shares">Акции</Link></li>
                                                 <li><Link to="/latest">Новинки</Link></li>
                                                 <li><Link to="/news">Новости</Link></li>
