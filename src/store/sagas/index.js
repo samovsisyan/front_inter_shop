@@ -1,14 +1,12 @@
 import { all, fork } from 'redux-saga/effects';
-
-// import registr from './registr';
-// import login from './login';
 import products from './products';
+import login from './login';
+
 
 export default function* root() {
     const sagas = [
-        // registr,
-        // login,
-        products
+        products,
+        login,
     ];
     yield all(sagas.map(fork));
 }

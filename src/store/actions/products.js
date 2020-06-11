@@ -3,12 +3,9 @@ export const PRODUCTS_SUCCESS = 'PRODUCTS_SUCCESS';
 export const PRODUCTS_FAIL = 'PRODUCTS_FAIL';
 
 
-export function fetchProduct() {
+export function fetchProducts() {
     return {
         type: PRODUCTS_REQUEST, payload: {},
     };
 }
-
-
-
 

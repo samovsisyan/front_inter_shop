@@ -5,7 +5,7 @@ import * as api from '../../api';
 function* handleProductsRequest() {
     try {
         const data = yield call(api.fetchProductsData);
-        console.log("PRODUCTS SAGAS ",data)
+        console.log("DATA SAGAS", data.products)
         yield put({
             type: PRODUCTS_SUCCESS,
             payload: {products: data.products},
@@ -19,6 +19,8 @@ function* handleProductsRequest() {
         });
     }
 }
+
+
 
 
 export default function* watchers() {

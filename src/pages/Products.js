@@ -2,17 +2,17 @@ import React, {Component} from 'react';
 // import Wrapper from "../components/Wrapper";
 // import {Link} from "react-router-dom";
 import {connect} from 'react-redux';
-import {fetchProduct} from "../store/actions/products";
+import {fetchProducts} from "../store/actions/products";
 
 class Products extends Component {
 
     componentDidMount() {
-        this.props.fetchProduct();
+        this.props.fetchProducts();
     }
 
     render() {
-        const prod = this.props.products;
-        console.log("prod prod prod prod prod", prod);
+        const products = this.props.prod;
+        console.log("prod prod prod prod prod", products);
         return (
             <div>
                 Hello
@@ -22,11 +22,11 @@ class Products extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    products: state.products.product,
+    prod: state.products.product,
 });
 
 const mapDispatchToProps = {
-    fetchProduct,
+    fetchProducts,
 };
 
 

@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
-import {axiosLogin} from "../../store/actions/login";
+import {fetchLogin} from "../../store/actions/login";
 import {connect} from "react-redux";
 
-class SignIn extends Component {
+class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            login: '',
+            username: '',
             password:''
         };
+    }
+
+    componentDidMount() {
+        this.props.fetchLogin()
     }
 
     handleChange= (e) => {
@@ -20,18 +24,29 @@ class SignIn extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.axiosLogin(this.state)
+        this.props.fetchLogin(this.state)
     };
+
+    handleClick = () => {
+        localStorage.removeItem('Token');
+    }
 
 
     render() {
+        console.log(this.state)
+        const token = this.props.token
+        console.log("token token token", token)
+
+        localStorage.setItem('Token', this.props.token);
+        const getItem = localStorage.getItem('Token');
+        console.log("local", getItem)
 
         return (
             <div className='container' >
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <label htmlFor='login'>login</label>
-                        <input type="text" id='login' onChange={this.handleChange}/>
+                        <label htmlFor='username'>username</label>
+                        <input type="text" id='username' onChange={this.handleChange}/>
                     </div>
                     <div>
                         <label htmlFor='password'>password</label>
@@ -41,22 +56,28 @@ class SignIn extends Component {
                         <button>LogIn</button>
                     </div>
                 </form>
+
+                <div onClick={this.handleClick}>
+                    LOGOUT
+                </div>
             </div>
         );
     }
 }
 
-const mapStateToProps = (state) => ({
-    userLogin: state.usersData,
+const mapStateToProps = state => ({
+
+    token: state.login.token
 });
 
 const mapDispatchToProps = {
-    axiosLogin,
+    fetchLogin,
 };
 
-const SignInContainer = connect(
+const Container = connect(
     mapStateToProps,
     mapDispatchToProps,
-)(SignIn);
+)(Login);
 
-export default SignInContainer;
+export default Container;
+
