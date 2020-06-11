@@ -11,15 +11,15 @@ import Latest from "./pages/Latest";
 import MyCart from "./pages/MyCart";
 import News from "./pages/News";
 import NewsSing from "./pages/NewsSing";
-import Product from "./pages/Product";
-import Registr from "./pages/users/Registr";
+import Products from "./pages/Products";
+// import Registr from "./pages/users/Registr";
 import Shares from "./pages/Shares";
 import Wishlist from "./pages/Wishlist";
 import Zakaz_1 from "./pages/Zakaz-1";
 import Zakaz_2 from "./pages/Zakaz-2";
 import Zakaz_3 from "./pages/Zakaz-3";
 import Zakaz_4 from "./pages/Zakaz-4";
-import Login from "./pages/users/Login";
+// import Login from "./pages/users/Login";
 
 class App extends Component {
     render() {
@@ -36,15 +36,15 @@ class App extends Component {
                     <Route path="/my-cart" component={MyCart}/>
                     <Route path="/news" component={News}/>
                     <Route path="/news-sing" component={NewsSing}/>
-                    <Route path="/product" component={Product}/>
-                    <Route path="/registr" component={Registr}/>
+                    <Route path="/products" component={Products}/>
+                    {/*<Route path="/registr" component={Registr}/>*/}
                     <Route path="/shares" component={Shares}/>
                     <Route path="/wishlist" component={Wishlist}/>
                     <Route path="/zakaz-1" component={Zakaz_1}/>
                     <Route path="/zakaz-2" component={Zakaz_2}/>
                     <Route path="/zakaz-3" component={Zakaz_3}/>
                     <Route path="/zakaz-4" component={Zakaz_4}/>
-                    <Route path="/login" component={Login}/>
+                    {/*<Route path="/login" component={Login}/>*/}
 
 
 
