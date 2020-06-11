@@ -77,7 +77,8 @@ import * as serviceWorker from './serviceWorker';
 
 import './assets/style/main.min.css';
 
-
+import {I18nextProvider} from 'react-i18next';
+import i18n from './config/i18n';
 
 import {createStore, applyMiddleware} from 'redux'
 import createSagaMiddleware from 'redux-saga'
@@ -100,7 +101,11 @@ sagaMiddleware.run(sagas);
 
 ReactDOM.render(
     <Provider store={store}>
-            <App/>
+        <I18nextProvider i18n={i18n}>
+
+        <App/>
+        </I18nextProvider>
+
     </Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
